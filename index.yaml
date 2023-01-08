@@ -1,0 +1,39 @@
+apiVersion: v1
+entries:
+  durabletask-azurestorage-scaler:
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
+          description: Initial alpha release
+      artifacthub.io/images: |
+        - name: durabletask-azurestorage-scaler
+          image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
+      artifacthub.io/license: MIT
+      artifacthub.io/prerelease: "true"
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/kedacore/keda
+      artifacthub.io/signKey: |
+        fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+        url: https://keybase.io/wsugarman/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 1.0.0-alpha.1
+    created: "2023-01-08T00:38:03.341307944Z"
+    description: A KEDA external scaler for the Durable Task Azure Storage backend
+    digest: 0032f8562cab65b321df02253a5d4b564ec42f939e343366965918656ba959dc
+    home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+    icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+    keywords:
+    - dtfx
+    - functions
+    - keda
+    maintainers:
+    - email: will.sugarman@microsoft.com
+      name: Will Sugarman
+    name: durabletask-azurestorage-scaler
+    sources:
+    - https://github.com/wsugarman/durabletask-azurestorage-scaler
+    type: application
+    urls:
+    - chart/durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz
+    version: 1.0.0-alpha.1
+generated: "2023-01-08T00:38:03.340418749Z"

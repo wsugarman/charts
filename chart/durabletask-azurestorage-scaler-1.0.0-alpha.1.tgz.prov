@@ -1,0 +1,54 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial alpha release
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
+  artifacthub.io/license: MIT
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 1.0.0-alpha.1
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 1.0.0-alpha.1
+
+...
+files:
+  durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz: sha256:0032f8562cab65b321df02253a5d4b564ec42f939e343366965918656ba959dc
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJjuhACCRDXsrOZnYpo/gAAEm4QAI4Fy00OlvyCgBTrKy+7beuZ
+KsxyHPxOoQw6XVZtH9JP/XKlfU1oaux4MDGD6I4PstTSb5TW/izNJzHX0rhSVh4t
+qMvSL4++NMhvZNquomK5ocKRIKaYu/gyqWHTHyidbg6Dtw/v7uMXWs7XVjd/dZso
+xfQznQyJemyOGavrmKSiaFiTtmWGnKNaGPEdNn7gU1QL22cQEYJMn/0WOcuU1aZs
+XuG1SJ6d+0vUd4wg2rPCwi6S0eWWqZS5w17En3Lp6BuMMA7pkZc3IxRmXCGtGX0e
+iv5kcSJQiYLSSsBvSd8IJ5INsjr7bEpBQlRPPC3aZGXutqqm+5Hg4kCOWXk5Dqy1
+d+hRRnLGu1JljJzhiHTC3Ar25kqui6K8Iyb4w6B13x0mGjFBkoS1l6IbR6tAXg2F
+ZpW1tmbQW/qQ6TE7uHFmUB9QR5PSVlDhhIqsr2viU4aTvrvBrlnJO4wGGixFTVTs
+sv7I6mkztyqNdXhI9fY0iMrYC7uCCKi2VlLNINIIoqEIK9Q5lNX+XPtGRSjVLLJy
+7ggjF6u3b8++qJokZ1RVT/9ILF56dhgMEZLKJguoPxxIcxCaqlhu8TrdMMt30fKc
+iAez0I2mzN3ht6WEvAf/kDqzXrQeTvuxcdpdwy279uO0V0/DhB6KygStJgHAkbw0
+wYl5Ko/1LBwQLeShU/Cm
+=Zmfb
+-----END PGP SIGNATURE-----
