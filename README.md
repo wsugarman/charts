@@ -6,16 +6,18 @@ This repository hosts Helm charts created by Will Sugarman ([@wsugarman](https:/
 | `durabletask-azurestorage-scaler` | https://github.com/wsugarman/durabletask-azurestorage-scaler |
 
 ## Helm Chart Repository
-The chart repository is controlled by the [index.yaml](./index.yaml) that details all of the available charts and their versions. As new charts and versions are published, their corresponding archives and provenance files are found in the root folder:
+The chart repository is controlled by the [index.yaml](./index.yaml) that details all of the available charts and their versions. As new charts and versions are published, their archives and provenance files are found in their corresponding folder:
 ```
 ./charts/
   |
   |- index.yaml
-  |- durabletask-azurestorage-scaler-1.0.0.tgz
-  |- durabletask-azurestorage-scaler-1.0.0.tgz.prov
-  |- durabletask-azurestorage-scaler-2.0.0.tgz
-  |- durabletask-azurestorage-scaler-2.0.0.tgz.prov
-  |- ...
+  |- durabletask-azurestorage-scaler/
+      |
+      |- durabletask-azurestorage-scaler-1.0.0.tgz
+      |- durabletask-azurestorage-scaler-1.0.0.tgz.prov
+      |- durabletask-azurestorage-scaler-2.0.0.tgz
+      |- durabletask-azurestorage-scaler-2.0.0.tgz.prov
+      |- ...
 ```
 
 ### Installation
@@ -36,14 +38,14 @@ The Artifact Hub Scaler repository is found under the [artifacthub](./artifacthu
 ./charts/artifacthub/
   |
   |- artifacthub-repo.yml
-  |- durabletask-azurestorage-scaler
+  |- durabletask-azurestorage-scaler/
       |
-      |- 1.0.0
+      |- 1.0.0/
       |   |
       |   |- README.md
       |   |- artifacthub-pkg.yml
       |
-      |- 2.0.0
+      |- 2.0.0/
           |
           |- README.md
           |- artifacthub-pkg.yml
