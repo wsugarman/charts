@@ -1,0 +1,54 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial alpha release
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
+  artifacthub.io/license: MIT
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 1.0.0-alpha.1
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 1.0.0-alpha.1
+
+...
+files:
+  durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz: sha256:6595720b3d20cdabcbab78ddbd4a7caa3c0bae9acf38c32850cd9da523d9aec9
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJjuh9pCRDXsrOZnYpo/gAAWmYQAC11DVRqiCebJSgdmt21dlee
+o+u1hHKtt47CcKdCIA/E3XC8nF4MFPw2s3a5MXd6VlWCPCB6WW2NEotxWnudKrK4
+kieCsu3gcAm4oFZ6YUINhJTEJzHnrbmJ2mlo990gsJZx+8CasxcQJrVNYHOoMRXp
+LZl/3JaJSV7fpVyjiBWfZL1v2RmR4xV2R5Cptj21T33ZZoxHhs2cj3rpOP98gnT9
+Hm2wtcvl3YJn4u6YPqIb3hkkQ90mewrGU0RIwlPM64kFLf0VBpapZAgMLqKDUN/u
+0CWQ1ZVI+rzUikdjd8AbyQAh/00PGhG04DkdawY+QsfpPSXE/0UktA3UpzcHuaZ5
+qf3y5oBM4qcOZKRe0SoyOl28a9emeZcU6UXNs/MX+jZotydYqvzsr3vznj71hggQ
+87nZPXhmDL1ylpIHQEEB6CmesOlhJGTwcQx+1pbe+v6+Bs7aysqySTqY7Qjc7Qah
+TOduI7nFxaSOT/DdvalhicbmlFT17mTk/elBlQKbTfa6zj1Ds7x1/+ymRU9OlqMw
+5l5OTjFhA++LB4agOO84xALOdAT+i+jJGtmwWlfXP+RPG6cBAyKKRAaLjSUwqeUj
+Wj5pxrngUVpWgRNhIyBq1Vjp1DmYM5WHrlm6HLGOw/7jVmF+dGxXS4naFBmGMXtY
+8uMwadvQch6Qz5OPi3WU
+=LWQ+
+-----END PGP SIGNATURE-----
