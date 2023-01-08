@@ -1,0 +1,54 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Initial alpha release
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
+  artifacthub.io/license: MIT
+  artifacthub.io/prerelease: "true"
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 1.0.0-alpha.1
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 1.0.0-alpha.1
+
+...
+files:
+  durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz: sha256:6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJjuv1BCRDXsrOZnYpo/gAAt2sQACNi8zUMVh/MypTd3BcKpIFS
+webtxEhWwW9k2HG9wV4WhEl5JJDoIxJ/fVnvLbibzKmNLxBkUBKsnwBbBg4jEycj
+uKYfWvHqLLYYRr1RK+klAVe73c1LQJguYzOcaU9XbeK+fev+krgdDd1GiTkdbmZc
+5ooMeQzxK5oB5RxA50416xTzvllIDfFY0zYTjd1nELwabE5D+u3mMfRJNWox83MG
+0Ea1ciROIeCvJJWRjmdFvvUkDSBaCPf29vbHc0H8rKs2jqaCmhIa8pbUEVQANZWN
+ueWafzP9Sxzlru8r0NATqyG5RdoxwcU7kQLDorARzFlSHzpZvxBrL8mAPCl13+B3
+XHB/wshfO6Ie6ampEBIzxjUAhxZzF5A+yrS3BFfmH0GbluiyHY8DIjvrx2Zfmxxe
+fV8I/8b4KSWIeJCi0f0wTzEO1Kjusi4Ow+stIt9hzr4Bb5zrN/Ag57vv02KPCCoy
+70pAk9kcL4YXyS/hV+YQ68K7Ag3molrhsuC34ZUg6LddAhIZi4sZIw5r/UXsmDjl
+ZifmS+Jgxi3eDwW8Qx0mOmp37Lxzmx2ce4YemZe9OOB9runp61h4CLnuqArdT9Sj
+Eb3JFSjUXVyRDCyuHaso3ObGS8BX4wT5wP3bRQNvcWEHqChEDB9pqAPTa5tlnncD
++SCPmCgOZ1y02uf0P4ew
+=Bbc1
+-----END PGP SIGNATURE-----
