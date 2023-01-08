@@ -1,4 +1,4 @@
-# repositoryID: The ID of the Artifact Hub repository where the packages will be published to (optional, but it enables verified publisher)
+repositoryID: f3cf3583-bd8b-41bb-bfcf-5def16372dc9
 owners:
   - name: Will Sugarman
     email: will.sugarman@microsoft.com
