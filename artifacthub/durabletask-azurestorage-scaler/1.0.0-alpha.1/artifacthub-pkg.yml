@@ -8,19 +8,19 @@ digest: 6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
 license: MIT
 homeURL: https://github.com/wsugarman/durabletask-azurestorage-scaler
 appVersion: 1.0.0-alpha.1
-containersImages: |
+containersImages:
   - name: durabletask-azurestorage-scaler
     image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
-prerelease: "true"
+prerelease: true
 keywords:
 - dtfx
 - functions
 - keda
-changes: |
+changes:
   - kind: added
     description: Initial alpha release
 maintainers:
 - email: will.sugarman@microsoft.com
   name: Will Sugarman
-recommendations: |
+recommendations:
   - url: https://artifacthub.io/packages/helm/kedacore/keda
