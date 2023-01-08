@@ -1,26 +1,38 @@
 version: 1.0.0-alpha.1
 name: durabletask-azurestorage-scaler
 displayName: Durable Task KEDA External Scaler
-createdAt: 2023-01-08T17:30:02Z
+createdAt: 2023-01-08T21:55:51Z
 description: A KEDA external scaler for the Durable Task Azure Storage backend
 logoPath: logo.png
-digest: 6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
+digest: 2ad00e004d79e2aabf73edf9dd2c9a0f3803ee26ea204f34d74541f6b2eb2902
 license: MIT
 homeURL: https://github.com/wsugarman/durabletask-azurestorage-scaler
 appVersion: 1.0.0-alpha.1
 containersImages:
-  - name: durabletask-azurestorage-scaler
-    image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
+- name: durabletask-azurestorage-scaler
+  image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0-alpha.1
 prerelease: true
 keywords:
 - dtfx
 - functions
 - keda
+install: |-
+  Add repository
+  ```bash
+  helm repo add wsugarman https://wsugarman.github.io/charts
+  ```
+
+  Install chart
+  ```bash
+  helm install dtfx-scaler wsugarman/durabletask-azurestorage-scaler --version 1.0.0-alpha.1
+  ```
+
+  ***dtfx-scaler** corresponds to the release name, feel free to change it to suit your needs. You can also add additional flags to the **helm install** command if you need to.*
 changes:
-  - kind: added
-    description: Initial alpha release
+- kind: added
+  description: Initial alpha release
 maintainers:
 - email: will.sugarman@microsoft.com
   name: Will Sugarman
 recommendations:
-  - url: https://artifacthub.io/packages/helm/kedacore/keda
+- url: https://artifacthub.io/packages/helm/kedacore/keda

@@ -35,20 +35,20 @@ version: 1.0.0-alpha.1
 
 ...
 files:
-  durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz: sha256:6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
+  durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz: sha256:2ad00e004d79e2aabf73edf9dd2c9a0f3803ee26ea204f34d74541f6b2eb2902
 -----BEGIN PGP SIGNATURE-----
 
-wsFcBAEBCgAQBQJjuv1BCRDXsrOZnYpo/gAAt2sQACNi8zUMVh/MypTd3BcKpIFS
-webtxEhWwW9k2HG9wV4WhEl5JJDoIxJ/fVnvLbibzKmNLxBkUBKsnwBbBg4jEycj
-uKYfWvHqLLYYRr1RK+klAVe73c1LQJguYzOcaU9XbeK+fev+krgdDd1GiTkdbmZc
-5ooMeQzxK5oB5RxA50416xTzvllIDfFY0zYTjd1nELwabE5D+u3mMfRJNWox83MG
-0Ea1ciROIeCvJJWRjmdFvvUkDSBaCPf29vbHc0H8rKs2jqaCmhIa8pbUEVQANZWN
-ueWafzP9Sxzlru8r0NATqyG5RdoxwcU7kQLDorARzFlSHzpZvxBrL8mAPCl13+B3
-XHB/wshfO6Ie6ampEBIzxjUAhxZzF5A+yrS3BFfmH0GbluiyHY8DIjvrx2Zfmxxe
-fV8I/8b4KSWIeJCi0f0wTzEO1Kjusi4Ow+stIt9hzr4Bb5zrN/Ag57vv02KPCCoy
-70pAk9kcL4YXyS/hV+YQ68K7Ag3molrhsuC34ZUg6LddAhIZi4sZIw5r/UXsmDjl
-ZifmS+Jgxi3eDwW8Qx0mOmp37Lxzmx2ce4YemZe9OOB9runp61h4CLnuqArdT9Sj
-Eb3JFSjUXVyRDCyuHaso3ObGS8BX4wT5wP3bRQNvcWEHqChEDB9pqAPTa5tlnncD
-+SCPmCgOZ1y02uf0P4ew
-=Bbc1
+wsFcBAEBCgAQBQJjuzuiCRDXsrOZnYpo/gAAQ5YQAEgiGPo5foCi9Ls79r2If/Cy
+mjowzFcUvnAlDv+oRI0I9ggmXqTkJ80YOoyFX7e+lfpvmg0x6XUS/5U4qT/JtUMX
+81yFs6Sf2EWMjlFJFgzb14KmSvhJ+3qOR0Jx1Jg3BbadzwuI4P/MPuLdvugAepoV
+kCLFtQoBWxuwNgiEMC30IwB5k9j5x+el9dnVtxGj79VJPGOWvN1tw/RbpDpRfKzG
+qhCzk4u/xaMRL/E+xBeitgA1T8c1nDnK5Yu3MF13kFXaB/i43J+srNyu8qivWW6A
+F2QT5vKBZzEftSThSTfY5aBkHq95W14Z0Mb7uLP3ti8iOkWN1VmH0pmcI8kiq3m3
+5ItelxTV/vXP+6tLIexrvYEUYe7bvIvzV6FSIxUxuMj/lQPLxKO8sqOB2sR/dZaq
+Xm7SNsWwSgMq9njDhF+Naq4QsHk1ZOBx2lJlIWEGczk324lNW3iWVvyRBRy9zb3u
+ObXl3kSCpuZtlIwctMwvQc1Y+wyDOpebYz8gPBfArSpg+JKQ3e/H1uupl2RvUq5M
+J3p4iavELwTbQKjOeW0tteml08h+eoUsx95sD6QlORCEBoCQU5VpQRYbSsDIzcj8
+FxpsmStXz5aLzCSwRp+kKq362uGdTPUS1/7eG+CtHcBblEi9B1+wfKR3UjnHFgvC
+sm19Dw6cUkZcTgUMPLhQ
+=D5HF
 -----END PGP SIGNATURE-----
