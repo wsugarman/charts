@@ -1,4 +1,3 @@
-# Charts
 This repository hosts Helm charts created by Will Sugarman ([@wsugarman](https://github.com/wsugarman)). It serves as both a [Helm Chart Repository](https://helm.sh/docs/topics/chart_repository/) and as an [Artifact Hub KEDA Scaler Repository](https://artifacthub.io/docs/topics/repositories/keda-scalers/). The source code for the charts cannot be found here. Instead, charts are automatically synchronized with pull requests from their respective CI GitHub actions:
 
 | Chart                             | Repository                                                   |
