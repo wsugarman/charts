@@ -56,7 +56,7 @@ entries:
         url: https://keybase.io/wsugarman/pgp_keys.asc
     apiVersion: v2
     appVersion: 1.0.0-alpha.1
-    created: "2023-03-04T02:54:54.104514125Z"
+    created: "2023-01-08T22:41:17.7291721Z"
     description: A KEDA external scaler for the Durable Task Azure Storage backend
     digest: 6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
     home: https://github.com/wsugarman/durabletask-azurestorage-scaler
