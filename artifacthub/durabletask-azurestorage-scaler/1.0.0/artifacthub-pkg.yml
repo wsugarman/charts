@@ -1,0 +1,44 @@
+version: 1.0.0
+name: durabletask-azurestorage-scaler
+displayName: Durable Task KEDA External Scaler
+createdAt: 2023-03-04T02:55:00Z
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+logoPath: logo.png
+digest: 35da49133c78b1a24f7ff2e473cda9ae88c3b08da58f4503e6ad92b1d0d1ec22
+license: MIT
+homeURL: https://github.com/wsugarman/durabletask-azurestorage-scaler
+appVersion: 1.0.0
+containersImages:
+- name: durabletask-azurestorage-scaler
+  image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0
+containsSecurityUpdates: true
+keywords:
+- dtfx
+- functions
+- keda
+install: |-
+  Add repository
+  ```bash
+  helm repo add wsugarman https://wsugarman.github.io/charts
+  ```
+
+  Install chart
+  ```bash
+  helm install dtfx-scaler wsugarman/durabletask-azurestorage-scaler --version 1.0.0
+  ```
+
+  ***dtfx-scaler** corresponds to the release name, feel free to change it to suit your needs. You can also add additional flags to the **helm install** command if you need to.*
+
+  *Before you can use the scaler, you must ensure that KEDA is also installed in the Kubernetes cluster.*
+changes:
+- kind: added
+  description: Added TLS support
+- kind: changed
+  description: Updated NuGet dependencies
+- kind: security
+  description: Updated dotnet/aspnet base image
+maintainers:
+- email: will.sugarman@microsoft.com
+  name: Will Sugarman
+recommendations:
+- url: https://artifacthub.io/packages/helm/kedacore/keda

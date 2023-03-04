@@ -4,6 +4,45 @@ entries:
   - annotations:
       artifacthub.io/changes: |
         - kind: added
+          description: Added TLS support
+        - kind: changed
+          description: Updated NuGet dependencies
+        - kind: security
+          description: Updated dotnet/aspnet base image
+      artifacthub.io/containsSecurityUpdates: "true"
+      artifacthub.io/images: |
+        - name: durabletask-azurestorage-scaler
+          image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0
+      artifacthub.io/license: MIT
+      artifacthub.io/recommendations: |
+        - url: https://artifacthub.io/packages/helm/kedacore/keda
+      artifacthub.io/signKey: |
+        fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+        url: https://keybase.io/wsugarman/pgp_keys.asc
+    apiVersion: v2
+    appVersion: 1.0.0
+    created: "2023-03-04T02:54:54.105298529Z"
+    description: A KEDA external scaler for the Durable Task Azure Storage backend
+    digest: 35da49133c78b1a24f7ff2e473cda9ae88c3b08da58f4503e6ad92b1d0d1ec22
+    home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+    icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+    keywords:
+    - dtfx
+    - functions
+    - keda
+    maintainers:
+    - email: will.sugarman@microsoft.com
+      name: Will Sugarman
+    name: durabletask-azurestorage-scaler
+    sources:
+    - https://github.com/wsugarman/durabletask-azurestorage-scaler
+    type: application
+    urls:
+    - durabletask-azurestorage-scaler/durabletask-azurestorage-scaler-1.0.0.tgz
+    version: 1.0.0
+  - annotations:
+      artifacthub.io/changes: |
+        - kind: added
           description: Initial alpha release
       artifacthub.io/images: |
         - name: durabletask-azurestorage-scaler
@@ -17,7 +56,7 @@ entries:
         url: https://keybase.io/wsugarman/pgp_keys.asc
     apiVersion: v2
     appVersion: 1.0.0-alpha.1
-    created: "2023-01-08T14:41:17.7291721-08:00"
+    created: "2023-01-08T22:41:17.7291721Z"
     description: A KEDA external scaler for the Durable Task Azure Storage backend
     digest: 6e1b29e2fce737b0c88549c9026da5b17799bddcf1d96b0095b14c5ad05740e0
     home: https://github.com/wsugarman/durabletask-azurestorage-scaler
@@ -36,4 +75,4 @@ entries:
     urls:
     - durabletask-azurestorage-scaler/durabletask-azurestorage-scaler-1.0.0-alpha.1.tgz
     version: 1.0.0-alpha.1
-generated: "2023-01-08T14:41:17.7266726-08:00"
+generated: "2023-03-04T02:54:54.10340312Z"

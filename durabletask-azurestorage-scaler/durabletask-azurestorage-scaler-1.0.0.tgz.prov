@@ -1,0 +1,58 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added TLS support
+    - kind: changed
+      description: Updated NuGet dependencies
+    - kind: security
+      description: Updated dotnet/aspnet base image
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 1.0.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 1.0.0
+
+...
+files:
+  durabletask-azurestorage-scaler-1.0.0.tgz: sha256:35da49133c78b1a24f7ff2e473cda9ae88c3b08da58f4503e6ad92b1d0d1ec22
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJkArK8CRDXsrOZnYpo/gAARiAQABNEBojE+kwCjjjY1Kqy6oaP
+yGfxGM0BhFfqJFJuRCi50VM4vwjcwgbanCgFvZ5hIAnfVi6P+LdrFS34YWrNuTBw
+RnqJos3VfFSoCwEjjS65ztfe3zEmOJOr8Wmp6f8fB8BqaZ9Wnn5H9SdjxmS++NQ/
+tuuxEo3LfGj636TCQOMW8AQaJ+C8BvPubuMm3I1odJtI1+9Me+eGDgh1ieAHhlhX
+71LfrQnRWgLqfc5YhZh9SiKqkkMotMRsibQkx0zuJ0B9TdAK9z8EPUm4Al4c9Khp
+BnFxMsq7QCMCQ0HjJlkfnGKdhNQlciWfnJYWdCTvEiUTSNJx4umLtHM7/wRdxw20
+3sS510HwbX44KZaXf92+kCB3vuaWflPaDKNF1eDgQeKirccvv+4dfaAnKqXeEO/q
+KBEVY15p9Azsi5++B2EG0DsM/fYAsEz2+Zo26gPsjf05TyxJW0oxJa+N/QmaU7kI
+u5/UHa6ycuzwRpzFSEXu9Pfn35xxlZ7D92GqMOpkqqjLObq7k7ui11o4iQdBttFo
+i6SlTSP7wm6kYHmDE4KMgfr7KZInho/bk4MMvBaiEsPFf3ays327jhWP/YTVynq8
+26hplaBf3mprxzpqaShytbdPTnXYTvR56tO1Wn9U4+54uTriyV/8vn0pxrQSsxCa
+9w//PYMFwpxmZjeAFw1U
+=uSLo
+-----END PGP SIGNATURE-----
