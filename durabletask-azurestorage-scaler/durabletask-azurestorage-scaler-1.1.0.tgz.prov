@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added support for environment variables from config maps and secrets
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 1.0.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 1.1.0
+
+...
+files:
+  durabletask-azurestorage-scaler-1.1.0.tgz: sha256:4115def0b44d5c5916b810795fcae47dac7f0511b3ef3bf4c423da8a78005900
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJkTrkECRDXsrOZnYpo/gAAmLIQAJQ1MAujPjPRoi7luRbcsfRZ
+WH0myqIAgLBA1mdqYDuzpYImd9s38CBsmSrd3WIhK6I0/9oN4m2G0e1x05bcfWRS
+2G0ynSAagp/shMlLRJEqzQW3mK//oKsQQXLZeSZUJ7akqC471hDo+VmbTy4VjHz5
+tXWbn/Jl+IaMd+5UecNKQ7aH1K/4yndL84hruXGtf2J5NfTOPvMuCq9HpSU96eNX
+xSyhWz2hJ5FaDrssAabARdywvfd/litqnqGocdP28oufHRxCsiAj6zYfZetLpVFd
+Ug3fVY0qUuGVXFVNoXQiqCkIW37iyGRw58HcN/ekDOVk3HowQiMIdbZDyWK8pYvL
+86EjtaWHt7T1T/bntWZ4zWRQl3oVr0FVOeoV7MF+shNDI4+Vu7Zsu7il8r+1n/zh
+9C2fv2hScZToCCvz0BEhXfdupzRj9KLCCAPsCoskDuUlfyoyATeNJcqcWxTCHKJc
+vh0F8Bg/2FK1kBEk+BUeUccxgMRaR9mDdVicLvyirk2KqrLH23m3srEPQql1P/LF
+C6je90ScklLnPLRBg7mhz6diOlylTL5eg6hj7YjQ9aB/KMuJSugnjeFr8ft0gNaL
+QRNYM/8HQtYMRuo2D8GrraNQ33WBOs5eD8yhM+9YsB2jtwJU7p66c+oLmVec6fiw
+Mz6I7z9V91Td/UNAa4vg
+=cXbL
+-----END PGP SIGNATURE-----
