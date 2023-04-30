@@ -6,7 +6,6 @@ entries:
       artifacthub.io/changes: |
         - kind: added
           description: Added support for environment variables from config maps and secrets
-      artifacthub.io/containsSecurityUpdates: "true"
       artifacthub.io/images: |
         - name: durabletask-azurestorage-scaler
           image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:1.0.0
