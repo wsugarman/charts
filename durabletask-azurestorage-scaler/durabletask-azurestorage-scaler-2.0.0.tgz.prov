@@ -1,0 +1,67 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added values for configuring the scaler's logging
+    - kind: added
+      description: Added explicit support for Azure Workload Identity
+    - kind: added
+      description: Added new scaler metadata validation
+    - kind: added
+      description: Added support for validating the client TLS certificate's issuer
+    - kind: changed
+      description: Changed the value tls.secret to tls.serverCert.secret
+    - kind: fixed
+      description: Fixed certificate file monitor to be correctly alerted on change
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:2.0.0
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 2.0.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 2.0.0
+
+...
+files:
+  durabletask-azurestorage-scaler-2.0.0.tgz: sha256:1687ef0ef3c6b1be027685cbf468d51cf95af97ebc3104861670cd03ed9cdccb
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJlfOvMCRDXsrOZnYpo/gAAdV4QAEX9I/iSU0tEhwe3jRqEQNRp
+qDWm6MjKOd8RPpk9QQR7xil6sIrvqaWx0jR8NIi4dZAjuegQXY/BaD/ZxY2QmJ92
+InFiLfAPabeU7tYmTQKk5nPUrZiGLPiUk3t4XWZn5Tk0TD67ue3kH8MukT5/Hp0F
+TyRCIme5/ALcMeeHCKxHi+Cc/q4oIHWzaDf/PBlH2ah+jCduu81FB+CUB0Ds9uMB
+McxZXn5H5UwtvSJCJ/4DRmJiqe0IFvjFc+GdTPl7L22zPfVkb96YH/kQ/LVxdjAO
+3dwN6VQHoG6eWxcndJXl0Olt2XjHWSY4Z4sXvfz1VTInVuffxwDIUCmTnyr8tZy2
+NsPYgfm9Th05h3LinyP+1jJjnnzhZPPVr6Bi45bAp1a+L4njgqBYgPR7JSb3UgSN
+ODAUPpQz1y9IvkhNTHPA0vYlo58pKChlvJwjWzWAcMBpyftRfg+zI48HflwIns1/
+VSClUinryKEGQhRcqEY4/GpwAm/yIo9QZRSXcH6HcxySsU6TNuwbgxDlk+Cz6ocN
+6UM+KuJdM7wpZbI5mL6bbSz6vMveU/G7RGnUNPOKciGirlKqr2yGTlwq8ddUV9Ta
+pUzIcE9wkDuTySyjQDW2kZsnNo26ahHp/WhTWortTBvDETHGT3bY3cM8mHgQrHPS
+CBOdzKAYeslEfYaBFVZj
+=ElXn
+-----END PGP SIGNATURE-----
