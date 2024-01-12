@@ -1,0 +1,57 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added new readiness check when TLS is enabled to ensure that the configured certificates are available.
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:2.1.0
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 2.1.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 2.1.0
+
+...
+files:
+  durabletask-azurestorage-scaler-2.1.0.tgz: sha256:e5fc965a24ac882805573c6299b6533fe7805c2477766a00ea1f31b4b064bac3
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJloEmhCRDXsrOZnYpo/gAAFMMQAKvvvbTsXixNQ0AqSmifAMSj
+nmhg51zdEulPhKC2COeKxNI60xBQqc+S8vibmZJQNTbapAukw9hnkJ/oeMNhGWHZ
+CO/BPU1dLdQEA3wqDhWw2u5XLOjya8A1uQ5fpUf+P3JItR84Bcqsyn4oJkfoxy/w
+4fSyS0vDDOfZtXy4EKym9AADRrxgyJ8WZD7GnbgYu3ED3vQQSYdrigAbJYJRYZnP
+pTrzxxgJAkOEtiUNptVD2SvinA2p9LiZ06KXGjPi/IulrET9qvqhFwcVRs10F52v
+6wBpdchT895KXUKGE1rG6cR1r40W5Dlgn0Vuz6hz2FVF+mPDrFJTXsttFKcmgMoM
+UyNXPYqWWDZMTRd5THZ7HPWqASC6rl83dXefwkmVG+jNWWKOUB3BhQcvtsJ4DdaM
+erfmlNSSdJFJXZGmmziKv0AKdERBaLHCsjCqwc+pwa6BtYELlqTg6/rIo58f4F0w
+7o5BH7RWaKY2ZHzDEp0qAB6g+6dzJ4wJmp8pTYZ7UtFZeBm+JJxHEFXF4nZW2dYs
+Y0HdRTvNI3RT8y+GVhDkMjcI3M3IE2FSUmwuRorV/IHW2jMYHKf7DqaPU1H+dKHE
+clBQlz9fGk0gmY49YKhsUsJxiOqAL56UWi1XNhCogXhWk/dkjK8PBX+ILxEjQDMj
+XC4ozi/0Z2FRbdi3argJ
+=ktuP
+-----END PGP SIGNATURE-----
