@@ -1,0 +1,63 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added support for Partition Manager v3 using the new useTablePartitionManagement field in the ScaledObject
+    - kind: changed
+      description: Updated base image to mcr.microsoft.com/dotnet/aspnet:9.0.0-azurelinux3.0-distroless
+    - kind: fixed
+      description: Fixed possible race condition when reloading certificates that may be currently in use
+    - kind: removed
+      description: Removed support for AAD Pod Identity. Microsoft Entra Workload Identity is now the recommended approach
+  artifacthub.io/containsSecurityUpdates: "false"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:3.0.0
+      platforms:
+        - linux/amd64
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 3.0.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 3.0.0
+
+...
+files:
+  durabletask-azurestorage-scaler-3.0.0.tgz: sha256:7f8b806156fcbd750eac8de6cfd1af39a24c096f5187fe1fe1930201be55740c
+-----BEGIN PGP SIGNATURE-----
+
+wsFcBAEBCgAQBQJncGKmCRDXsrOZnYpo/gAArz8QAGYhb3aQRmZhkCPbdMQlmNzu
++mIwjQM7fHUw0I++/4rh6PK/zdJSmflKJkF8CRt2kQMpCiJyy/RRR3cOkT37XVzF
+mm+zUxPVdMpaVjgRskW6gkw76ypwPeOJmLru38E1AuR0lkBU7LoBfQHB8f3WuPUk
+/dQKM7t/njhRpEqKD2m0hbfzOeQSTYBrxgRYrXW8s1t6RNs3Tr2SJcTmBlKSca0f
+R9yIKXFscVKIw3sEn5IYuuplrscPtncR78LcFqVyY/YfrdwjZJHTN/RiuCnhmBRn
+H51GWOtWQtHJetJMsjK0Hs1IEZBkGSsPQTP1Faj7dWWlG10eBYtW8x7tgEC4qwYE
+Tx6+afw6Z4p/QzLGnSoZZmMhpZ2Mb1nV8z/NAgUcoUSGXJt0GPBiFUwa71t6B0lk
+xwd9Qcb5zqrVGPUAv9adnmQA8qRCu2HtfrpkEH/rq6W1gxbSlsn881p54g6Srqo3
+2jHpMPrisHKzH3N4LcUtKb5899bGaq6kf9+3VcqTXhLVqQ7h4wbuBdrS1C61ESRH
+PjREkvadk46/z5jdYgzhIks6Wzzh/h3D3+ftK0YTS+vlsGSEDr31czplc6cl7fil
+DZrEIwmUPaj0TfSsPDU7pN1bOoaJkOyQ2IbPLJaQjDnSV4hhKRYTRIqenw5DAvFz
+lK6MIn2ADInvQNmbvIFe
+=i69A
+-----END PGP SIGNATURE-----

@@ -1,0 +1,49 @@
+version: 3.0.0
+name: durabletask-azurestorage-scaler
+category: monitoring-logging
+displayName: Durable Task KEDA External Scaler
+createdAt: 2024-12-28T20:44:02Z
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+logoPath: logo.png
+digest: 7f8b806156fcbd750eac8de6cfd1af39a24c096f5187fe1fe1930201be55740c
+license: MIT
+homeURL: https://github.com/wsugarman/durabletask-azurestorage-scaler
+appVersion: 3.0.0
+containersImages:
+- name: durabletask-azurestorage-scaler
+  image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:3.0.0
+  platforms:
+  - linux/amd64
+containsSecurityUpdates: false
+keywords:
+- dtfx
+- functions
+- keda
+install: |-
+  Add repository
+  ```bash
+  helm repo add wsugarman https://wsugarman.github.io/charts
+  ```
+
+  Install chart
+  ```bash
+  helm install dtfx-scaler wsugarman/durabletask-azurestorage-scaler --version 3.0.0
+  ```
+
+  ***dtfx-scaler** corresponds to the release name, feel free to change it to suit your needs. You can also add additional flags to the **helm install** command if you need to.*
+
+  *Before you can use the scaler, you must ensure that KEDA is also installed in the Kubernetes cluster.*
+changes:
+- kind: added
+  description: Added support for Partition Manager v3 using the new useTablePartitionManagement field in the ScaledObject
+- kind: changed
+  description: Updated base image to mcr.microsoft.com/dotnet/aspnet:9.0.0-azurelinux3.0-distroless
+- kind: fixed
+  description: Fixed possible race condition when reloading certificates that may be currently in use
+- kind: removed
+  description: Removed support for AAD Pod Identity. Microsoft Entra Workload Identity is now the recommended approach
+maintainers:
+- email: will.sugarman@microsoft.com
+  name: Will Sugarman
+recommendations:
+- url: https://artifacthub.io/packages/helm/kedacore/keda
