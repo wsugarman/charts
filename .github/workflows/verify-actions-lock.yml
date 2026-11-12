@@ -11,15 +11,6 @@ permissions:
 jobs:
   verify:
     runs-on: ubuntu-latest
-    env:
-      GH_TOKEN: ${{ github.token }}
     steps:
-      - name: Checkout
-        uses: actions/checkout@v7.0.1
-        with:
-          persist-credentials: false
-      # The extension version is managed centrally by Renovate in renovate.json
-      - name: Install gh-actions-lock
-        run: gh extension install github/gh-actions-lock --pin "$(jq -er '.constraints.ghActionsLock' renovate.json)"
-      - name: Verify lockfile
-        run: gh actions-lock --verify
+      - name: Verify actions lockfile
+        uses: $/.github/actions/verify-actions-lock
