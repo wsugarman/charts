@@ -1,0 +1,16 @@
+name: Verify Actions Lockfile
+
+on:
+  pull_request:
+  push:
+    branches: ["main"]
+
+permissions:
+  contents: read
+
+jobs:
+  verify:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Verify actions lockfile
+        uses: $/.github/actions/verify-actions-lock
