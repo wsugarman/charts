@@ -1,0 +1,72 @@
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+annotations:
+  artifacthub.io/category: monitoring-logging
+  artifacthub.io/changes: |
+    - kind: added
+      description: Added linux/arm64 support
+    - kind: changed
+      description: Updated base image to mcr.microsoft.com/dotnet/aspnet:11.0.0-azurelinux4.0-distroless
+    - kind: removed
+      description: Removed the fallback to the scaler's own AzureWebJobsStorage environment variable. Exactly one of connection, connectionFromEnv, or accountName must be specified in the trigger metadata
+    - kind: fixed
+      description: Fixed connectionFromEnv such that the scaler uses the connection string that KEDA resolves from the scale target's container instead of looking up the value as an environment variable name
+    - kind: fixed
+      description: Fixed rendering of the service account when additionalAnnotations is specified
+    - kind: fixed
+      description: Fixed topologySpreadConstraints such that the list of constraints is applied directly to the scaler pods instead of being read from topologySpreadConstraints.operator
+    - kind: security
+      description: Prevented the scaler from writing the connection string to its logs when connectionFromEnv could not be resolved
+  artifacthub.io/containsSecurityUpdates: "true"
+  artifacthub.io/images: |
+    - name: durabletask-azurestorage-scaler
+      image: ghcr.io/wsugarman/durabletask-azurestorage-scaler:5.0.0
+      platforms:
+        - linux/amd64
+        - linux/arm64
+  artifacthub.io/license: MIT
+  artifacthub.io/recommendations: |
+    - url: https://artifacthub.io/packages/helm/kedacore/keda
+  artifacthub.io/signKey: |
+    fingerprint: 5921b98760ce1d3d6d118692d7b2b3999d8a68fe
+    url: https://keybase.io/wsugarman/pgp_keys.asc
+apiVersion: v2
+appVersion: 5.0.0
+description: A KEDA external scaler for the Durable Task Azure Storage backend
+home: https://github.com/wsugarman/durabletask-azurestorage-scaler
+icon: https://raw.githubusercontent.com/wsugarman/durabletask-azurestorage-scaler/main/img/storm-icon.png
+keywords:
+- - dtfx
+- - functions
+- - keda
+maintainers:
+- - email: will.sugarman@microsoft.com
+  name: Will Sugarman
+name: durabletask-azurestorage-scaler
+sources:
+- - https://github.com/wsugarman/durabletask-azurestorage-scaler
+type: application
+version: 5.0.0
+
+...
+files:
+  durabletask-azurestorage-scaler-5.0.0.tgz: sha256:ca26a9728986037c35c393a442b2a934b9325b50ad1e398c4789111ce2755b27
+
+-----BEGIN PGP SIGNATURE-----
+
+wsG5BAEBCgBtBYJq9eyeCRDXsrOZnYpo/kUUAAAAAAAcACBzYWx0QG5vdGF0aW9u
+cy5vcGVucGdwanMub3Jn/AhXfY69N0uwKh7WBuwNp3JgL7mUJHjsSfIftg5SQ+cW
+IQRZIbmHYM4dPW0RhpLXsrOZnYpo/gAAPwUP/0RO8k7DVe0O8ln46oN/MG7WHPbQ
+ozcvQqJ5MPb/Jyz+JzXbS2ij3QY51wqWBwGUN5bVTvSxllm7fy6TaiKs7WcEcTss
+QOHrfVIhX9XappRP3Gcff/qVqOEJZMnrnwN7xmPRAN6YlY2dnewqTGik8Dq6EQNQ
++xyD9PTvwTIibYKpx8r3I62aXWgPzIxT+GhR60ytwWHbFmlYx37Q6TIPs/011JJZ
+/f+YjnSJhzUuQ8q1Chpe1YtEkaY8XgW9rZiI2vtDCH0b2O7ZXwKiX0+R2PTFuzZu
+vW3urmN/BUWomAJXA5Nz0OoDbT+PC9SDQRHy40S3Q1sgQXVJILuNQFdK/VWWtn8Y
+TY+HT/R0+6635fFj7oxDiaYyFCUCYVOv9Pj9FzZB8lX6zyLHeP5tpowln9h6oE2q
+/p07L6aD5OPHWi0XIqHkwC3+Jns2meGkfySkcl3gOomM9VzmbtgA3CpnMnX5wKAZ
+6FeLZg3nbb2XDfrFGwYMX+G+Rw6+q55z+rii6uW8b4OMDscBSyb5y6xO9I0XgIiu
+tmXfffeBXGP8WBfMww+6au2MykxhXY1xQRnVgU3j5O1tap7yej2giMMkEiNFtCuT
+f9nO+JJzqXghikjO5xKegeyr4qpr9evuT8thP0AhLyoY0DTD0ZmGGNqiAa+K8Py5
+I0v0tmYoZdGfo+pl
+-----END PGP SIGNATURE-----
