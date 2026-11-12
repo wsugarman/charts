@@ -12,7 +12,7 @@
   "customManagers": [
     {
       "customType": "regex",
-      "description": "Update the gh-actions-lock extension used by Renovate and the verify-actions-lock workflow to regenerate and verify .github/workflows/actions.lock",
+      "description": "Update the gh-actions-lock extension used by Renovate and CI workflows to regenerate and verify .github/workflows/actions.lock",
       "managerFilePatterns": [
         "/^renovate\\.json$/"
       ],
